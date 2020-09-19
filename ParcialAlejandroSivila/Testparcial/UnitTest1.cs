@@ -1,5 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ParcialAlejandroSivila;
+using ParcialAlejandroSivila.Controllers;
+
 namespace Testparcial
 {
     [TestClass]
@@ -9,7 +11,9 @@ namespace Testparcial
         public void TestMethod1()
         {
             //arrange
-            Paiscontroller 
+            PaisController controller = new PaisController();
+            //act
+            var listapaises = controller.GetPais();
         }
     }
 }
